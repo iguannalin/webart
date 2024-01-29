@@ -21,3 +21,15 @@ body {
   color: var(--main-text-color);
   text-shadow: var(--shadow-color) -2px 2px 8px;
 }
+
+.fog {
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  filter: blur(2px);
+  transition: all ease-in 0.2s;
+}
+
+a:hover {
+  filter: blur(0);
+}
