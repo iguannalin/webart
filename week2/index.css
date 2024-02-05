@@ -20,11 +20,23 @@ body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
   text-shadow: var(--shadow-color) -2px 2px 8px;
+  height: 100vh;
 }
 
 #container {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column;
+  flex-flow: row wrap;
+  width: 60%;
+}
+
+img {
+  width: 96px;
+}
+
+a:hover {
+  transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  cursor: pointer;
+  -webkit-filter: drop-shadow(5px 5px 5px #ffffff); filter: drop-shadow(5px 5px 5px #ffffff);
 }

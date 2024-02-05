@@ -9,13 +9,15 @@ window.addEventListener("load", () => {
   // svgs from -- https://commons.wikimedia.org/w/index.php?search=oracle.svg&title=Special:MediaSearch&go=Go&type=image
   fetch("links.json").then((r)=>r.json()).then((d)=>{
     links = d;
-    for (let i = 0; i < getRandomInt(10,25); i++) {
+    for (let i = 0; i < 20; i++) {
       fetch(links[getRandomInt(0,links.length)]).then((d)=>d.blob()).then((r)=>{
+        const a = document.createElement('a');
         const img = document.createElement('img');
         img.src = URL.createObjectURL(r);
-        container.appendChild(img);
+        a.appendChild(img)
+        a.href = ".";
+        container.appendChild(a);
       })
     }
   });
-
 });
