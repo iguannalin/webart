@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
   // svgs from -- https://commons.wikimedia.org/w/index.php?search=oracle.svg&title=Special:MediaSearch&go=Go&type=image
   fetch("links.json").then((r)=>r.json()).then((d)=>{
     links = d;
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < Math.min((window.innerWidth/35),(window.innerHeight/25)); i++) {
       fetch(links[getRandomInt(0,links.length)]).then((d)=>d.blob()).then((r)=>{
         const a = document.createElement('a');
         const img = document.createElement('img');

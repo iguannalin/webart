@@ -28,11 +28,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 480px;
+  width: 50%;
+  max-width: 90%;
 }
 
 img {
-  width: 96px;
+  width: 72px;
 }
 
 a:hover {
