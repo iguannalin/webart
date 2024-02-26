@@ -1,0 +1,39 @@
+html {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 12px;
+  box-sizing: border-box;
+  width: min(80vw, 90px*6);
+  height: max(90px * 4, 70vh);
+}
+
+.product {
+  box-sizing: border-box;
+  padding: 0 12px;
+  border-bottom: 5px solid #dfebfd;
+}
+
+.product:hover {
+  border: 3px solid red;
+  box-sizing: border-box;
+}
+
+.product img {
+  width:75px;
+  height: auto;
+}
