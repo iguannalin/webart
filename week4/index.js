@@ -9,7 +9,6 @@ window.addEventListener("load", () => {
   function displayItems(list) {
     for (let i = 0; i < Math.min(window.innerWidth/31, window.innerHeight/31); i++) {
       const item = list[getRandomInt(0, list.length)];
-      console.log(item);
       const div = document.createElement("div");
       div.className = "product";
       const img = document.createElement("img");

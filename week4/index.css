@@ -9,6 +9,7 @@ body {
   align-items: center;
   flex-flow: column;
   height: 100vh;
+  width: 100vw;
 }
 
 #container {
@@ -26,6 +27,7 @@ body {
   box-sizing: border-box;
   padding: 0 12px;
   border-bottom: 5px solid #dfebfd;
+  transition: all 0.25s ease-in;
 }
 
 .product:hover {

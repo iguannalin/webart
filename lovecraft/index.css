@@ -1,0 +1,35 @@
+html {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+#container {
+}
+
+p {
+  position: absolute;
+  z-index: 0;
+}
+
+img:not(.gif) {
+  position: absolute;
+  max-width: 200px;
+  height: auto;
+  /* z-index: 10; */
+}
+
+.gif {
+  position: absolute;
+  /* width: 100px; */
+  height: auto;
+  z-index: 1000;
+}
